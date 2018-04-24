@@ -9,12 +9,18 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.css" />
     <link rel="manifest" href="./manifest.json">
 </head>
-<h1>Welcome to My Awesome App</h1>
+<h1 style="text-align: center;">Welcome to My Awesome App</h1>
 <div id="firebaseui-auth-container"></div>
 
 <body>
     <script src="public/js/noti.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-functions.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -29,7 +35,7 @@
         var actionCodeSettings = {
             // URL you want to redirect back to. The domain (www.example.com) for this
             // URL must be whitelisted in the Firebase Console.
-            url: 'http://localhost:1111',
+            url: 'http://localhost:8887',
             // This must be true.
             handleCodeInApp: true,
             iOS: {
@@ -58,7 +64,8 @@
     <script type="text/javascript">
         // FirebaseUI config.
         var uiConfig = {
-            signInSuccessUrl: 'http://localhost:1111',
+            // this is when login success redirecting url, can be modified
+            signInSuccessUrl: 'http://localhost:8887',
             signInOptions: [{
                     // Leave the lines as is for the providers you want to offer your users.
                     // Google provider must be enabled in Firebase Console to support one-tap
