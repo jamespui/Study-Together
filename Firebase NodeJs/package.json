@@ -1,0 +1,27 @@
+{
+  "name": "firebase-nodejs",
+  "version": "1.0.0",
+  "description": "studytogether learn firebase with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamespui/Study-Together.git"
+  },
+  "keywords": [
+    "firebase",
+    "nodejs",
+    "studytogether"
+  ],
+  "author": "laohanme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamespui/Study-Together/issues"
+  },
+  "homepage": "https://github.com/jamespui/Study-Together#readme",
+  "dependencies": {
+    "firebase": "^4.13.1"
+  }
+}
